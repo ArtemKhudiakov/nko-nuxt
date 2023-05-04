@@ -6,7 +6,11 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "export": "nuxt export",
+    "serve": "nuxt serve",
+    "check": "nuxt --check",
+    "format": "nuxt -- write"
   },
   "dependencies": {
     "core-js": "^3.25.3",
@@ -15,5 +19,13 @@
     "vue-server-renderer": "^2.7.10",
     "vue-template-compiler": "^2.7.10"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "prettier": "^2.8.8"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run format"
+    }
+  }
 }
