@@ -6,7 +6,6 @@
       <nuxt-link class="navigation__link" to="/id">Id</nuxt-link>
     </nav>
 
-    <Tutorial/>
   </div>
 </template>
 
